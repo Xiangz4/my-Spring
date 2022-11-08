@@ -1,11 +1,16 @@
 package com.xyf.test;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class UserService {
-    private String name;
-    public UserService(String name){
-        this.name = name;
-    }
+    public String uId;
+    public UserDao userDao;
+
     public void queryUserInfo(){
-        System.out.println("查询用户信息"+name);
+        System.out.println("查询信息"+userDao.queryUserName(uId));
     }
+
 }
