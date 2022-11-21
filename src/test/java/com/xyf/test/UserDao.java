@@ -7,8 +7,9 @@ public class UserDao {
     private static Map<String,String> map = new HashMap<>();
 
     static {
-        map.put("xyf","21");
-    }
+        map.put("10001", "小傅哥");
+        map.put("10002", "八杯水");
+        map.put("10003", "阿毛");    }
 
     public String queryUserName(String uId){
         return map.get(uId);
